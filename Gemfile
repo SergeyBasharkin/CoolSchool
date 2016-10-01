@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'puma-heroku'
 gem 'puma'
 gem 'rails_12factor', group: :production
-ruby "2.3.1"
+ruby "2.2.4"
 
 
 # Use jquery as the JavaScript library
