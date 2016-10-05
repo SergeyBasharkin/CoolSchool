@@ -17,6 +17,7 @@ gem 'puma-heroku'
 gem 'puma'
 gem 'rails_12factor', group: :production
 ruby "2.2.4"
+gem 'slim'
 
 
 # Use jquery as the JavaScript library
@@ -27,10 +28,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem "foundation-rails"
+gem "foundation-icons-sass-rails"
 # Use Unicorn as the app server
 # gem 'unicorn'
 
