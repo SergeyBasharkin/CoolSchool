@@ -34,7 +34,7 @@ gem "foundation-rails"
 gem "foundation-icons-sass-rails"
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem "jquery-slick-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
