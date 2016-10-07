@@ -17,6 +17,12 @@
 
  /*= require foundation
  */
+.fi-chemistry{
+    display: block;
+    margin: 15% auto;
+    position: relative;
+    color: white;
+}
 .header {
     background: #074E68;
     background-size: cover;
@@ -33,6 +39,7 @@
     font-size: medium;
     width: 80%;
     margin: auto;
+    text-align: justify;
 }
 .header-subnav {
     float: none;

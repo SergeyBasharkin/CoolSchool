@@ -4,8 +4,8 @@ html lang="ru"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-    title == content_for?(:title) ? yield(:title) : "Untitled"
-
+    title == content_for?(:title) ? yield(:title) : "Школа ЕГЭ и ОГЭ"
+    = favicon_link_tag "facon.jpg"
     = stylesheet_link_tag "application"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tag
