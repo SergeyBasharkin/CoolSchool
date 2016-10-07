@@ -19,10 +19,17 @@
  */
 .fi-chemistry{
     display: block;
-    margin: 15% auto;
+    margin: 18% auto;
     position: relative;
     color: white;
 }
+.fi-history{
+    display: block;
+    margin: 20% auto;
+    position: relative;
+    color: white;
+}
+
 .header {
     background: #074E68;
     background-size: cover;
@@ -72,12 +79,36 @@
 .squad{
     background-color: #569;
     border-radius: 50%;
-    display: table;
     height: 100px;
-    margin: 0 auto;
     width: 100px;
-    font-size: 3rem;;
+    display: table;
+    font-size: 3rem;
+    box-sizing: content-box;
 }
 .squad p{
     text-align: center;
+}
+.squad span{
+    color: #ffffff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.child span{
+    font-size: 2rem;
+    color: #333333;
+}
+.child p{
+    text-align: center;
+}
+.child {
+    max-width: 300px;
+}
+.child .text{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.child .text p{
+    padding: 10px;
 }

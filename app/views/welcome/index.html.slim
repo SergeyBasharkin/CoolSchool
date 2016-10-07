@@ -12,9 +12,9 @@ hr
       .small-9.columns
         input placeholder="Ссылка Вконтакте" type="text" /
       .small-3.columns
-        input.button.small type="submit"
+        input.button.small type="submit" value="Записаться"
 hr
-h2.headline.text-center
+h2.headline.text-center#school
   | О Школе
 hr
 p.text-center.medium-text-size
@@ -29,7 +29,7 @@ h4.large.text-center
 hr
 .row
   .small-12.column
-    h2.headline.text-center
+    h2.headline.text-center#lessons
       | Предметы
 hr
 .detox
@@ -49,7 +49,7 @@ hr
   .child
     .box
       .box-icon
-        span.fi-telephone
+        = embedded_svg "fi-ru.svg", class: 'fi-chemistry'
       .info.text-center
         |Русский язык
   .child
@@ -85,7 +85,7 @@ hr
   .child
     .box
       .box-icon
-        span.fi-telephone
+        = embedded_svg "fi-history.svg", class: 'fi-history'
       .info.text-center
         |История
   .child
@@ -95,7 +95,7 @@ hr
       .info.text-center
         |Литература
 hr
-h2.headline.text-center
+h2.headline.text-center#teachers
   | Наши преподаватели
 hr
 .sl.detox
@@ -104,7 +104,7 @@ hr
   .child-sl
     = image_tag "03.jpg"
   .child-sl
-    =image_tag "02.jpg"
+    = image_tag "02.jpg"
   .child-sl
     = image_tag "01.jpg"
   .child-sl
@@ -112,10 +112,42 @@ hr
   .child-sl
     = image_tag "03.jpg"
 hr
-h2.headline.text-center
+h2.headline.text-center#results
   | Результаты
 hr
-.detox
-  .child
-    .squad
 
+
+.detox#counter
+  div.child
+    div.text
+      p
+        |Более
+        span data-num="300"
+          |0
+        | учеников поступили в лучшие ВУЗы России
+
+  .child
+    .text
+      p
+        span data-num="3"
+          |0
+        |Ученика сдали ЕГЭ на
+        span data-num="100"
+          | 0
+        | баллов
+  .child
+    .text
+      p
+        |Каждый
+        span data-num="2"
+          | 0
+        |-й сдает ЕГЭ на
+        span data-num="80"
+          | 0
+        |баллов и выше
+  .child
+    .text
+      p
+        span data-num="67"
+          | 0
+        | Минимальный балл ЕГЭ за 3 года
