@@ -1,0 +1,20 @@
+= form_for(@note) do |f|
+  - if @note.errors.any?
+    #error_explanation
+      h2
+        = pluralize(@note.errors.count, "error")
+      ul
+        = @note.errors.full_messages.each do |message|
+          = message
+  -if flash[:notice]
+    .notice
+      =flash[:notice]
+  .large-4.medium-4.columns.field
+    = f.text_field :name, placeholder: "#{:name}"
+  .large-4.medium-4.columns.field
+    = f.text_field :number, placeholder: "#{:number}"
+  .large-4.medium-4.columns.field
+    .input-group
+      = f.text_field :vk, class: "input-group-field", placeholder: "#{:vk}"
+      .input-group-button
+        = f.submit class: "button"
