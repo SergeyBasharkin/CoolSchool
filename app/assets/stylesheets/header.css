@@ -22,7 +22,7 @@
 
 .topnav li.icon {display: none;}
 
-@media screen and (max-width:846px) {
+@media screen and (max-width:850px) {
   .topnav li:not(:first-child) {display: none;}
   .topnav li.icon {
     float: right;
@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (max-width:846px) {
+@media screen and (max-width:850px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive li.icon {
     position: absolute;
