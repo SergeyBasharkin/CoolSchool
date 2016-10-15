@@ -7,18 +7,22 @@
       = devise_error_messages!
 
       .field
-        = f.label  "ФИО"
+        = f.label  "ФИО*"
         = f.text_field :full_name, autofocus: true
 
       .field
-        = f.label  "Email"
+        = f.label  "Вконтакте"
+        = f.text_field :vk, autofocus: true
+
+      .field
+        = f.label  "Email*"
         = f.email_field :email, autofocus: true
       .field
-        = f.label  "Пароль"
+        = f.label  "Пароль*"
         = f.password_field :password, autocomplete: "off"
 
       .field
-        = f.label "Подтверждение пароля"
+        = f.label "Подтверждение пароля*"
         = f.password_field :password_confirmation, autocomplete: "off" 
 
       .actions 

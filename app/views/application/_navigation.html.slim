@@ -19,6 +19,9 @@ header
       li
         a href="#feedback"  Контакты
       li
-        a href="#"  Личный кабинет
+        -if user_signed_in?
+          =link_to "Личный кабинет", destroy_user_session_path, :method => :delete
+        -else
+          a href="#" Личный кабинет 
       li.icon
         a href="javascript:void(0)" onclick="toggleFunc()" &#9776;
