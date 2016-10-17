@@ -18,7 +18,7 @@ gem 'puma'
 gem 'rails_12factor', group: :production
 ruby "2.2.4"
 gem 'slim'
-
+gem 'devise'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

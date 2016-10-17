@@ -1,0 +1,39 @@
+h2 Edit 
+  = resource_name.to_s.humanize
+
+= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+  = devise_error_messages!
+
+  .field
+    = f.label  "ФИО"
+    = f.text_field :full_name, autofocus: true
+
+  .field
+    = f.label  "Email"
+    = f.email_field :email, autofocus: true
+
+  - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+    div Ожидается подтверждение для: 
+      = resource.unconfirmed_email
+  .field
+    = f.label "Пароль"
+      i  (Оставьте пустым, если не хотите изменять)
+    = f.password_field :password, autocomplete: "off" 
+
+  .field
+    = f.label "Подтверждение пароля"
+    = f.password_field :password_confirmation, autocomplete: "off" 
+
+  .field
+    = f.label "Действующий пароль"  
+      i(Нам нужен ваш пароль для подтверждения информации)
+    = f.password_field :current_password, autocomplete: "off" 
+
+  .actions
+    = f.submit "Обновить", class: "button" 
+
+h3  Удалить аккаунт
+
+p  Не понравилось? 
+= button_to "Удалить аккаунт", registration_path(resource_name), data: { confirm: "Вы уверены?" }, method: :delete 
+= link_to "Back", :back

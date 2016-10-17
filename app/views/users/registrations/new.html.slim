@@ -1,0 +1,32 @@
+.row
+  .columns
+    h2 Регистрация
+.row
+  .medium-6.columns
+    = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| 
+      = devise_error_messages!
+
+      .field
+        = f.label  "ФИО*"
+        = f.text_field :full_name, autofocus: true
+
+      .field
+        = f.label  "Вконтакте"
+        = f.text_field :vk, autofocus: true
+
+      .field
+        = f.label  "Email*"
+        = f.email_field :email, autofocus: true
+      .field
+        = f.label  "Пароль*"
+        = f.password_field :password, autocomplete: "off"
+
+      .field
+        = f.label "Подтверждение пароля*"
+        = f.password_field :password_confirmation, autocomplete: "off" 
+
+      .actions 
+        = f.submit "Зарегистрироваться", class: "button"
+
+
+      
