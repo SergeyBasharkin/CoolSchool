@@ -6,7 +6,6 @@
     /*background-color: #333;*/
 }
 
-.topnav li {float: left;}
 
 .topnav li a {
     display: inline-block;
@@ -18,7 +17,6 @@
     font-size: 17px;
 }
 
-.topnav li a:hover {background-color: #555;}
 
 .topnav li.icon {display: none;}
 
