@@ -9,6 +9,9 @@
       .field
         = f.label  "ФИО*"
         = f.text_field :full_name, autofocus: true
+      .field
+        = f.label "Аватар"
+        = f.file_field :avatar
 
       .field
         = f.label  "Вконтакте"

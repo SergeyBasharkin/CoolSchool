@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "foundation-rails"
 gem "foundation-icons-sass-rails"
 gem 'activeadmin', '~> 1.0.0.pre4'
-
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 # Use Capistrano for deployment

@@ -92,7 +92,10 @@ h2.headline.text-center#teachers
 hr
 .sl.detox
   .child-sl
-    = image_tag "01.jpg"
+    -if current_user.nil?
+      = image_tag "01.jpg"
+    -else
+      = image_tag current_user.avatar.url
   .child-sl
     = image_tag "03.jpg"
   .child-sl

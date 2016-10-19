@@ -12,7 +12,7 @@ ActiveAdmin.register User do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-  permit_params :email, :password, :password_confirmation, :role
+  permit_params :email, :password, :password_confirmation, :role, :avatar
 
 
   index do
@@ -23,6 +23,9 @@ ActiveAdmin.register User do
     column :sign_in_count
     column :created_at
     column :role
+    column "Image" do |user|
+      image_tag user.avatar.url, height: "100px"
+    end
     actions
   end
 
@@ -32,6 +35,11 @@ ActiveAdmin.register User do
       f.input :password
       f.input :password_confirmation
       f.input :role
+      f.inputs "Attachment", :multipart => true do
+        f.input :avatar, :as => :file, :hint => image_tag(f.object.avatar.url), height: "100px"
+        f.input :avatar_cache, :as => :hidden, height: "100px"
+      end
+
     end
     f.actions
   end
