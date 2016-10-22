@@ -23,8 +23,9 @@ hr
     h2.headline.text-center#lessons
       | Предметы
 hr
-=current_user.lessons do |i|
-  =i.subject
+=unless current_user.nil?
+  =current_user.stud_lessons.each do |i|
+    =i.subject
 .detox
   .large-up-5.medium-up-3.small-up-2.column.large-centered.small-centered.medium-centered
     .child.column
