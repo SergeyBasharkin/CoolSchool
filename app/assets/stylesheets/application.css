@@ -16,12 +16,14 @@
  *= require _settings
  *= require header
  *= require note
+ *= require alerts
  *= require notes
  *= require scaffolds
  *= require slick
  *= require slick-theme
  *= require welcome
  *= require foundation
+
  */
 .fi-chemistry{
     display: block;

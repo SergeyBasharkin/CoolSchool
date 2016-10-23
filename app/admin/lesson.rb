@@ -26,9 +26,9 @@ ActiveAdmin.register Lesson do
   form do |f|
     f.inputs "Admin Details" do
       f.input :date
-      f.input :subject
-      f.input :teacher
-      f.input :student
+      f.input :subject, :as=> :select, :collection=> ["Математика","Русский язык","Обществознание","Английский язык", "Информатика","Физика","Химия","История","Литература","Биология"]
+      f.input :teacher, :collection => User.where(role: "teacher")
+      f.input :student, :collection => User.where(role: "student")
     end
     f.actions
   end

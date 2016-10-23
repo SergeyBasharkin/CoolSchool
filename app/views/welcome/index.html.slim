@@ -1,3 +1,7 @@
+-if flash[:notice]
+  .alert-box.success data-alert=""
+    = flash[:notice]
+    a.close href="#"  &CircleTimes;
 hr
 h1.headline.text-center
   | Стать студентом очень просто!
@@ -23,9 +27,6 @@ hr
     h2.headline.text-center#lessons
       | Предметы
 hr
-=unless current_user.nil?
-  =current_user.stud_lessons.each do |i|
-    =i.subject
 .detox
   .large-up-5.medium-up-3.small-up-2.column.large-centered.small-centered.medium-centered
     .child.column

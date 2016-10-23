@@ -31,7 +31,8 @@ class NotesController < ApplicationController
         format.html { redirect_to welcome_index_path, notice: 'Note was successfully created.' }
         format.json { render :show, status: :created, location: @note }
       else
-        format.html { redirect_to welcome_index_path, notice: 'Error' }
+        session[:note_errors]=@note.errors
+        format.html { redirect_to welcome_index_path }
         format.json { render json: @note.errors, status: :unprocessable_entity }
       end
     end
