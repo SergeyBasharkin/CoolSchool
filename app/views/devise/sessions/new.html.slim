@@ -1,8 +1,8 @@
 .row
-  .columns
+  .columns.text-center 
     h2  Вход
 .row
-  .medium-6.columns    
+  .medium-6.columns.small-centered    
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .field
         = f.label  "Email"

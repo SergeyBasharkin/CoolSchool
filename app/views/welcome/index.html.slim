@@ -12,7 +12,7 @@ hr
 h2.headline.text-center#school
   | О Школе 
 hr
-p.text-center.medium-text-size
+p.medium-text-size
   | Мы занимаемся подготовкой к ЕГЭ и ОГЭ с 2013 года.
   | Преподаватели - выпускники ведущих ВУЗов России, призеры всеросийских олимпиад
   |, имеющие большой опыт в подготовке к ЕГЭ и ОГЭ, молодые и амбициозныестобальники!
@@ -27,126 +27,126 @@ hr
     h2.headline.text-center#lessons
       | Предметы
 hr
-.detox
-  .large-up-5.medium-up-3.small-up-2.column.large-centered.small-centered.medium-centered
-    .child.column
-      .box
-        .box-icon
-          span.fi-superscript
-        .info.text-center
-          |Математика
-    .child.column
-      .box
-        .box-icon
-          span.fi-torsos-all
-        .info.text-center
-          |Обществознание
+.module
+  .detox
+    .large-up-5.medium-up-3.small-up-2.column.large-centered.small-centered.medium-centered
+      .child.column
+        .box
+          .box-icon
+            span.fi-superscript
+          .info.text-center
+            |Математика
+      .child.column
+        .box
+          .box-icon
+            span.fi-torsos-all
+          .info.text-center
+            |Обществознание
 
-    .child.column
-      .box
-        .box-icon
-          /= embedded_svg "fi-ru.svg", class: 'fi-chemistry'
-        .info.text-center
-          |Русский язык
-    .child.column
-      .box
-        .box-icon
-          span.fi-torso
-        .info.text-center
-          |Английский язык
-    .child.column
-      .box
-        .box-icon
-          span.fi-laptop
-        .info.text-center
-          |Информатика
-    .child.column
-      .box
-        .box-icon
-          span.fi-lightbulb
-        .info.text-center
-          |Физика
-    .child.column
-      .box
-        .box-icon
-          /= embedded_svg "fi-chem.svg", class: 'fi-chemistry'
-        .info.text-center
-          |Химия
-    .child.column
-      .box
-        .box-icon
-          span.fi-trees
-        .info.text-center
-          |Биология
-    .child.column
-      .box
-        .box-icon
-          /= embedded_svg "fi-history.svg", class: 'fi-history'
-        .info.text-center
-          |История
-    .child.column
-      .box
-        .box-icon
-          span.fi-book
-        .info.text-center
-          |Литература
+      .child.column
+        .box
+          .box-icon
+            /= embedded_svg "fi-ru.svg", class: 'fi-chemistry'
+          .info.text-center
+            |Русский язык
+      .child.column
+        .box
+          .box-icon
+            span.fi-torso
+          .info.text-center
+            |Английский язык
+      .child.column
+        .box
+          .box-icon
+            span.fi-laptop
+          .info.text-center
+            |Информатика
+      .child.column
+        .box
+          .box-icon
+            span.fi-lightbulb
+          .info.text-center
+            |Физика
+      .child.column
+        .box
+          .box-icon
+            /= embedded_svg "fi-chem.svg", class: 'fi-chemistry'
+          .info.text-center
+            |Химия
+      .child.column
+        .box
+          .box-icon
+            span.fi-trees
+          .info.text-center
+            |Биология
+      .child.column
+        .box
+          .box-icon
+            /= embedded_svg "fi-history.svg", class: 'fi-history'
+          .info.text-center
+            |История
+      .child.column
+        .box
+          .box-icon
+            span.fi-book
+          .info.text-center
+            |Литература
 hr
 h2.headline.text-center#teachers
   | Наши преподаватели
 hr
-.sl.detox
-  .child-sl
-    -if current_user.nil?
-      = image_tag "01.jpg"
-    -else
-      = image_tag current_user.vk_avatar
-  .child-sl
-    = image_tag "03.jpg"
-  .child-sl
-    = image_tag "02.jpg"
-  .child-sl
-    = image_tag "01.jpg"
-  .child-sl
-    = image_tag "02.jpg"
-  .child-sl
-    = image_tag "03.jpg"
+= render 'teachers'
 hr
 h2.headline.text-center#results
   | Результаты
 hr
 
 
-.detox#counter
-  div.child
-    div.text
-      p
-        |Более
-        span data-num="300"
-          |0
-        | учеников поступили в лучшие ВУЗы России
+.module
+  .detox#counter
+    div.child
+      div.text
+        p
+          |Более
+          span data-num="300"
+            |0
+          | учеников поступили в лучшие ВУЗы России
 
-  .child
-    .text
-      p
-        span data-num="3"
-          |0
-        |Ученика сдали ЕГЭ на
-        span data-num="100"
-          | 0
-        | баллов
-  .child
-    .text
-      p
-        |Каждый
-        span data-num="2"
-          | 0
-        |-й сдает ЕГЭ на
-        span data-num="80"
-          | 0
-        |баллов и выше
-  .child
-    .text
-      p
-        span data-num="67"
-          | 0
-        | Минимальный балл ЕГЭ за 3 года
+    .child
+      .text
+        p
+          span data-num="3"
+            |0
+          |Ученика сдали ЕГЭ на
+          span data-num="100"
+            | 0
+          | баллов
+    .child
+      .text
+        p
+          |Каждый
+          span data-num="2"
+            | 0
+          |-й сдает ЕГЭ на
+          span data-num="80"
+            | 0
+          |баллов и выше
+    .child
+      .text
+        p
+          span data-num="67"
+            | 0
+          | Минимальный балл ЕГЭ за 3 года
+hr
+h2.headline.text-center#results
+  | Отзывы
+hr
+.module
+  .row.small-up-1.medium-up-2.large-up-3
+    -@posts.each do |post|
+      .columns
+        .post.panel.medium-text-size 
+          h3.text-center =post.commenter
+          p =post.body
+
+

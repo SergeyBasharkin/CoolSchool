@@ -20,6 +20,7 @@ header
         a href="#feedback"  Контакты
       li
         -if user_signed_in?
+          =link_to "Личный кабинет", :method => :get
           =link_to "Выйти", destroy_user_session_path, :method => :delete
         -else
           =link_to "Личный кабинет", new_user_session_path, :method => :get
