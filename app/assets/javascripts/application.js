@@ -17,5 +17,8 @@
 //= require_tree .
 $(document).foundation();
 $(function(){ $(document).foundation(); });
+Foundation.Abide.defaults.patterns['numbers_only'] = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+Foundation.Abide.defaults.patterns['vk_only'] = /^(http:\/\/|https:\/\/)?(www\.)?vk\.com\/(\w|\d)+?\/?$/;
+
 
 		
