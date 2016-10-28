@@ -15,16 +15,12 @@
  *= require footer
  *= require _settings
  *= require header
- *= require note
  *= require alerts
- *= require notes
- *= require scaffolds
- *= require slick
- *= require slick-theme
  *= require welcome
  *= require foundation
  *= require lessons
  *= require notesform
+ *= require scaffolds
 
  */
 .fi-chemistry{
@@ -41,10 +37,11 @@
 }
 
 .header {
-    background: #074E68;
+    background-image: url("header2.jpg");
     background-size: cover;
     position: relative;
     overflow: visible;
+    height: 400px;
     padding-top: 2.5rem;
     padding-bottom: 4.9rem; }
 .header .headline {

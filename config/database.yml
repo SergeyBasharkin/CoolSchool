@@ -18,8 +18,8 @@ default: &default
   adapter: postgresql
   encoding: unicode
   host: localhost
-  username: cms
-  password: qwaszx
+  username: my_cms
+  password: 3336754
   timeout: 5000
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling

@@ -48,4 +48,64 @@
 
 
 
+@media screen and (max-width: 500px){
+.nav-title{
+  font-size: 0.5rem;
+}
+}
+.nav-title{
+  text-align: center;
+  font-size: 2rem;
+  color: #f2f2f2
+}
+.header-title small{
+  font-size: 1rem;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.filin img{
+  z-index: 10;
+  margin-top: 1rem;
+}
+
+#myTopnav li{
+  text-shadow: 
+    -0   -1px 0   #000000,
+     0   -1px 0   #000000,
+    -0    1px 0   #000000,
+     0    1px 0   #000000,
+    -1px -0   0   #000000,
+     1px -0   0   #000000,
+    -1px  0   0   #000000,
+     1px  0   0   #000000,
+    -1px -1px 0   #000000,
+     1px -1px 0   #000000,
+    -1px  1px 0   #000000,
+     1px  1px 0   #000000,
+    -1px -1px 0   #000000,
+     1px -1px 0   #000000,
+    -1px  1px 0   #000000,
+     1px  1px 0   #000000;
+}
+
+.header-text-shadow{
+  text-shadow: 
+    -0   -1px 0   #000000,
+     0   -1px 0   #000000,
+    -0    1px 0   #000000,
+     0    1px 0   #000000,
+    -1px -0   0   #000000,
+     1px -0   0   #000000,
+    -1px  0   0   #000000,
+     1px  0   0   #000000,
+    -1px -1px 0   #000000,
+     1px -1px 0   #000000,
+    -1px  1px 0   #000000,
+     1px  1px 0   #000000,
+    -1px -1px 0   #000000,
+     1px -1px 0   #000000,
+    -1px  1px 0   #000000,
+     1px  1px 0   #000000;
+}
 
