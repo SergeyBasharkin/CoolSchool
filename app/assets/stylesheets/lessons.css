@@ -5,6 +5,7 @@
   padding: 10px;
 }
 .event-date {
+  color: #f2f2f2;
   width: 6rem;
   margin: 0 auto 1rem;
   display: table-cell;
@@ -12,10 +13,11 @@
   width: auto; }
   .event-date .event-month {
     margin: 0;
-    background: #eee;
+    background: #333333;
     padding: 0.5rem 2rem;
     text-align: center; }
   .event-date .event-day {
+    color: #333333;
     margin: 0;
     border: 1px solid #eee;
     padding: 20px;

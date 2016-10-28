@@ -71,7 +71,6 @@
   margin: auto;
 }
 .slick-arrow{
-  margin-left: 3%;
   z-index: 10;
   color: black;
 }
@@ -100,7 +99,6 @@
  
 .carousel-el {
     display: block;
-    margin-right: 25px;
     float: left;
     border: 1px solid;
 }
@@ -111,9 +109,7 @@
 }
  
 .arrow-left, .arrow-right {
-    float: left;
-    display: block;
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 10%;
 }
 .arrow-left:hover, .arrow-right:hover {

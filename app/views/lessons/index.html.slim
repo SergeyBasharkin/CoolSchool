@@ -1,17 +1,17 @@
 -unless current_user.nil?
-	.row
-	  .small-9.columns.small-centered
-	  	-current_user.stud_lessons.each do |lesson|
-		   	article.event
-		      .event-date
+	.row.large-up-5.medium-up-3.small-up-2
+	  -@my_lessons.each do |lesson|
+	   	article.event.column
+		    .event-date
 		        p.event-month 
 		        	=Date::MONTHNAMES[lesson.date.month]
 		        p.event-day 
-		        	=lesson.date.day
-		      .event-desc
-		        h4.event-desc-header Day in the Life of Foundation for Apps
-		        p.event-desc-detail
-		          span.event-desc-time
-		          	lesson.date.time
+		        	=lesson.date.day	
+			    .callout
+			    	h6.event-desc-header
+			    		=lesson.subject+": "
+			    		=lesson.date.to_s(:time)
+
+		        
 	      
 

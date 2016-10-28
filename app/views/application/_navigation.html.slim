@@ -6,7 +6,8 @@ header
           =image_tag "mudryiy-filin1_2.png", size: "200x300"
       .medium-4.large-4.small-8.columns.end.header-title
         h1.nav-title.header-text-shadow
-          |Центр эффективной подготовки к ЕГЭ и ОГЭ 
+          |Центр эффективной подготовки к ЕГЭ и ОГЭ
+          br 
           small.header-text-shadow
             |Школа будущего студента 
       
@@ -26,7 +27,7 @@ header
         a href="#feedback"  Контакты
       li
         -if user_signed_in?
-          =link_to "Личный кабинет", :method => :get
+          =link_to "Личный кабинет", "/lessons/index", :method => :get
           =link_to "Выйти", destroy_user_session_path, :method => :delete
         -else
           =link_to "Личный кабинет", new_user_session_path, :method => :get
