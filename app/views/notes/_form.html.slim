@@ -1,15 +1,15 @@
 = form_for @note, :html=> {:"data-abide"=> '' , :"novalidate"=>''} do |f|
   .large-4.medium-4.columns.field
-    = f.text_field :name, placeholder: "ФИО",required: ""
+    = f.text_field :name, placeholder: "ФИО",required: "", class: "crystal-input", title: "ФИО"
     span.form-error
       | Введите свое имя
   .large-4.medium-4.columns.field
-    = f.text_field :number, placeholder: "Телефон", pattern: "numbers_only", required:""
+    = f.text_field :number, placeholder: "Телефон", class: "crystal-input", pattern: "numbers_only", required:"", title: "Телефон"
     span.form-error
       | Введите правильный номер телефона
   .large-4.medium-4.columns.field
     .input-group
-      = f.text_field :vk, class: "input-group-field", placeholder: "Ссылка ВКонтакте", pattern: "vk_only" 
+      = f.text_field :vk, class: "input-group-field crystal-input", placeholder: "Ссылка ВКонтакте", pattern: "vk_only" , title: "Ссылка ВК"
       .input-group-button
         = f.submit class: "button", value: "Записаться" 
       br

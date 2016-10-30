@@ -1,34 +1,21 @@
-hr
-h1.headline.text-center
-  | Стать студентом очень просто!
-  br
-  h2.healine.text-center
-    | Первое занятие бесплатно!
-hr
-.row
-  =render "notes/form"
-hr
-h2.headline.text-center#school
-  | О Школе 
-hr
-p.medium-text-size
-  | Мы занимаемся подготовкой к ЕГЭ и ОГЭ с 2013 года.
-  | Преподаватели - выпускники ведущих ВУЗов России, призеры всеросийских олимпиад
-  |, имеющие большой опыт в подготовке к ЕГЭ и ОГЭ, молодые и амбициозныестобальники!
-  | Занятия проводятся в малых (от 2-4 человек) и средних (от 4-8) по численности группах
-  | Тебе понравится готовиться к экзаменам в нашей дружной команде!
-  | На занятиях тебя ждет уютная атмосфера, увлекательное погружение в мир знаний и чай со сладостями!
-h4.large.text-center
-  | По окончании курсов выдаются сертификаты
-hr
-.row
-  .small-12.column
-    h2.headline.text-center#lessons
-      | Предметы
-hr
-.module
-  .detox
-    .large-up-5.medium-up-3.small-up-2.column.large-centered.small-centered.medium-centered
+.centrator  
+  h2.headline.text-center#school
+    | О Школе 
+  p.medium-text-size
+    | Мы занимаемся подготовкой к ЕГЭ и ОГЭ с 2013 года.
+    | Преподаватели - выпускники ведущих ВУЗов России, призеры всеросийских олимпиад
+    |, имеющие большой опыт в подготовке к ЕГЭ и ОГЭ, молодые и амбициозные стобальники!
+    |  Занятия проводятся в малых (от 2-4 человек) и средних (от 4-8) по численности группах
+    | Тебе понравится готовиться к экзаменам в нашей дружной команде!
+    | На занятиях тебя ждет уютная атмосфера, увлекательное погружение в мир знаний и чай со сладостями!
+  h4.large.text-center
+    | По окончании курсов выдаются сертификаты
+.lessons
+  .row
+    .small-12.column
+      h2.headline.text-center#lessons
+        | Предметы
+    .large-up-5.medium-up-5.small-up-2.column.large-centered.small-centered.medium-centered
       .child.column
         .box
           .box-icon
@@ -90,58 +77,50 @@ hr
             span.fi-book
           .info.text-center
             |Литература
-hr
--unless @teachers.nil?
+.centrator
   h2.headline.text-center#teachers
     | Наши преподаватели
-  hr
   = render 'teachers'
-  hr
-h2.headline.text-center#results
-  | Результаты
-hr
-
-
-.module
-  .detox#counter
-    div.child
-      div.text
-        p
-          |Более
-          span data-num="300"
-            |0
-          | учеников поступили в лучшие ВУЗы России
-
-    .child
-      .text
-        p
-          span data-num="3"
-            |0
-          |Ученика сдали ЕГЭ на
-          span data-num="100"
-            | 0
-          | баллов
-    .child
-      .text
-        p
-          |Каждый
-          span data-num="2"
-            | 0
-          |-й сдает ЕГЭ на
-          span data-num="80"
-            | 0
-          |баллов и выше
-    .child
-      .text
-        p
-          span data-num="67"
-            | 0
-          | Минимальный балл ЕГЭ за 3 года
-hr
--unless @posts.nil?
+.centrator
+  h2.headline.text-center#results
+    | Результаты
+  .module
+    .detox#counter
+      div.child
+        div.text
+          p
+            |Более
+            span data-num="300"
+              |0
+            | учеников поступили в лучшие ВУЗы России
+      .child
+        .text
+          p
+            span data-num="3"
+              |0
+            |Ученика сдали ЕГЭ на
+            span data-num="100"
+              | 0
+            | баллов
+      .child
+        .text
+          p
+            |Каждый
+            span data-num="2"
+              | 0
+            |-й сдает ЕГЭ на
+            span data-num="80"
+              | 0
+            |баллов и выше
+      .child
+        .text
+          p
+            span data-num="67"
+              | 0
+            | Минимальный балл ЕГЭ за 3 года
   h2.headline.text-center#results
     | Отзывы
-  hr
+>>>>>>> 80bdf1e89b6080246672220d8ce238b2cc81242b
   .module
     .row.small-up-1.medium-up-2.large-up-3
       -@posts.each do |post|
