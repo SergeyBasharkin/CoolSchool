@@ -1,22 +1,28 @@
 header
   .header
-    .row.small-collapse
-      .medium-2.large-2.small-2.columns
-        .filin
-          =image_tag "mudryiy-filin1_2.png", size: "200x300"
-      .medium-4.large-4.small-8.columns.end.header-title
-        h1.nav-title.header-text-shadow
-          |Центр эффективной подготовки к ЕГЭ и ОГЭ
-          br 
-          small.header-text-shadow
-            |Школа будущего студента 
-      
-
+    .large-1.medium-3.small-3.columns
+      =image_tag "mudryiy-filin1_2.png", size: "150x150"
+    .large-2.medium-6.small-8.columns.filin-logo
+      h1.header-text-logo
+        |Центр эффективной подготовки к ЕГЭ и ОГЭ
+        br 
+      h2.header-text-logo.hard-html
+        |Школа будущего студента
+    .row    
+    h1.headline.text-center
+      b
+        | Стать студентом очень просто!
+    br
+    h2.headline.text-center
+      b
+        | Первое занятие бесплатно! 
+    .row.input-notes
+      =render "notes/form"
     ul.topnav.header-subnav id="myTopnav"
       li
         a href="#school"  О школе
       li
-        a.is-active href="#lessons"  Предметы
+        a href="#lessons"  Предметы
       li
         a href="#teachers"  Преподаватели
       li
@@ -33,3 +39,5 @@ header
           =link_to "Личный кабинет", new_user_session_path, :method => :get
       li.icon
         a href="javascript:void(0)" onclick="toggleFunc()" &#9776;
+      
+

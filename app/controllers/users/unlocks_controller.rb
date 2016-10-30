@@ -5,9 +5,10 @@ class Users::UnlocksController < Devise::UnlocksController
   # end
 
   # POST /resource/unlock
-  # def create
-  #   super
-  # end
+  def new
+    @note=Note.new
+    super
+  end
 
   # GET /resource/unlock?unlock_token=abcdef
   # def show

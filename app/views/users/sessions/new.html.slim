@@ -20,25 +20,3 @@
         = f.submit "Войти", class:"button"
   
       = render "devise/shared/links"
-.row
-  .columns
-    h2  Вход
-.row
-  .medium-6.columns    
-    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-      .field
-        = f.label  "Email"
-        = f.email_field :email, autofocus: true
-      .field
-        = f.label  "Пароль"
-        = f.password_field :password, autocomplete: "off"
-
-      - if devise_mapping.rememberable?
-        .field
-          = f.check_box :remember_me 
-          = f.label "Запомнить"
-    
-      .actions
-        = f.submit "Войти", class:"button"
-  
-      = render "devise/shared/links"
