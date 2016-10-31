@@ -41,6 +41,8 @@
     background: image-url("Study.jpg") no-repeat;
     background-size: cover;
     background-position: 50% -120px;
+    background-position-x: 50%;
+    background-position-y: -120px; 
     /*background-size: 100%;*/
     position: relative;
     overflow: visible;
@@ -54,11 +56,15 @@
 @media screen and (max-width: 1160px) {
     .header{
         background-position: 80% -120px;
+        background-position-x: 80%;
+        background-position-y: -120px;
     }
 }
 @media screen and (max-height: 700px) {
   .header {
     background-position: 80%;
+    background-position-x: 80%;
+    background-position-y: 0px;
 }
 }
 .header .headline {
