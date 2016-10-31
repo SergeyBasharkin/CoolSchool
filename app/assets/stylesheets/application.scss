@@ -37,31 +37,38 @@
 }
 
 
-.header {
+header {
     background: image-url("Study.jpg") no-repeat;
     background-size: cover;
     background-position: 50% -120px;
     background-position-x: 50%;
     background-position-y: -120px; 
-    /*background-size: 100%;*/
+    background-size: 100%;
     position: relative;
     overflow: visible;
     padding-top: 2.5rem;
     padding-bottom: 9rem; 
-    background-attachment: fixed;
     line-height: 0.01;
+}
+.header-wrapper{
+    background: image-url("Study.jpg") no-repeat cover;
+    background-position: 50% -120px;
+    background-position-x: 50%;
+    background-position-y: -120px;
+    overflow: auto;
+
 }
 
 
 @media screen and (max-width: 1160px) {
-    .header{
+    header{
         background-position: 80% -120px;
         background-position-x: 80%;
         background-position-y: -120px;
     }
 }
 @media screen and (max-height: 700px) {
-  .header {
+  header {
     background-position: 80% 0%;
     background-position-x: 80%;
     background-position-y: 0%;
