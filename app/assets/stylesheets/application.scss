@@ -42,8 +42,7 @@ header {
     background-size: cover;
     background-position: 50% -120px;
     background-position-x: 50%;
-    background-position-y: -120px; 
-    background-size: 100%;
+    background-position-y: -120px;
     position: relative;
     overflow: visible;
     padding-top: 2.5rem;
@@ -54,9 +53,9 @@ header {
 
 @media screen and (max-width: 1160px) {
     header{
-        background-position: 80% -120px;
+        background-position: 80% 0;
         background-position-x: 80%;
-        background-position-y: -120px;
+        background-position-y: 0;
     }
 }
 @media screen and (max-height: 700px) {
