@@ -118,14 +118,9 @@
             span data-num="67"
               | 0
             | Минимальный балл ЕГЭ за 3 года
-  h2.headline.text-center#results
-    | Отзывы
-  .module
-    .row.small-up-1.medium-up-2.large-up-3
-      -@posts.each do |post|
-        .columns
-          .post.panel.medium-text-size 
-            h3.text-center =post.commenter
-            p =post.body
-
+  .background-reviews
+    .small-up-1.medium-up-2.large-up-3.centrator
+      h2.headline.text-center.color-white#results
+        | Отзывы
+      =render "posts"
 

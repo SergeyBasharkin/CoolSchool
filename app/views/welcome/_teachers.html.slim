@@ -1,10 +1,28 @@
-.row.small-centered
-	.arrow-left.medium-1.small-1.columns
-		i.fi-arrow-left
-	.hider.medium-10.small-9.columns
-		ul.carousel-list
-			-@teachers.each do |teacher|
-				li.carousel-el
-					= image_tag teacher.vk_avatar	
-	.arrow-right.medium-1.small-1.columns.end
-		i.fi-arrow-right						
+/.row.small-centered
+/	.arrow-left.medium-1.small-1.columns
+/		i.fi-arrow-left
+/	.hider.medium-10.small-9.columns
+/		ul.carousel-list
+/			-@teachers.each do |teacher|
+/				li.carousel-el
+/					= image_tag teacher.vk_avatar
+/	.arrow-right.medium-1.small-1.columns.end
+/		i.fi-arrow-right
+.row
+  .small-8.columns.small-centered
+    .orbit aria-label=("Favorite Space Pictures") data-orbit="" role="region"
+      button.orbit-previous
+        span.show-for-sr> Previous Slide
+        | ◀︎
+      button.orbit-next
+        span.show-for-sr> Next Slide
+        | ▶︎
+      ul.orbit-container
+        -@teachers.each do |teacher|
+          li.is-active.orbit-slide
+            =image_tag teacher.vk_avatar
+      nav.orbit-bullets
+        -@teachers.size.times do |i|
+          button.is-active data-slide="#{i}"
+            span.show-for-sr First slide details.
+            span.show-for-sr Current Slide

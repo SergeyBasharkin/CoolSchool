@@ -21,7 +21,6 @@
  *= require lessons
  *= require notesform
  *= require scaffolds
-
  */
 .fi-chemistry{
     display: block;
@@ -174,7 +173,7 @@ header .button:hover{
 .lessons{
     padding-top: 30px ;
     color: #f2f2f2;
-    background: image-url("kniga.jpg") no-repeat;
+    background: image-url("subjects.png") no-repeat;
     background-size: cover;
     background-position: 40% center;
 }
@@ -184,4 +183,29 @@ body{
 .centrator{
     padding-top: 100px;
     padding-bottom: 100px;
+}
+.orbit-slide{
+  height: 500px;
+  text-align: center;
+}
+.orbit-slide img{
+  width: 400px;
+  height: 500px;
+  border: 2px solid #8f9296 ;
+}
+.orbit-previous, .orbit-next{
+  color: #333333 !important;
+  text-align: center;
+  font-size: 1.5rem !important;
+}
+.orbit-sizer{
+  height: 500px;
+}
+.background-reviews{
+  background: image-url("reviews.png") no-repeat;
+  background-size: 100%;
+
+}
+.color-white{
+  color: #f2f2f2;
 }

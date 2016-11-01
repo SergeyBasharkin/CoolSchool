@@ -1,0 +1,6 @@
+
+- @posts.each do |post|
+  .columns
+    .post.panel.medium-text-size
+      h3.text-center = post.commenter
+      p = post.body
