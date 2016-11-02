@@ -81,46 +81,48 @@
   h2.headline.text-center#teachers
     | Наши преподаватели
   = render 'teachers'
-.centrator
-  h2.headline.text-center#results
-    | Результаты
-  .module
-    .detox#counter
-      div.child
-        div.text
-          p
-            |Более
-            span data-num="300"
-              |0
-            | учеников поступили в лучшие ВУЗы России
-      .child
-        .text
-          p
-            span data-num="3"
-              |0
-            |Ученика сдали ЕГЭ на
-            span data-num="100"
-              | 0
-            | баллов
-      .child
-        .text
-          p
-            |Каждый
-            span data-num="2"
-              | 0
-            |-й сдает ЕГЭ на
-            span data-num="80"
-              | 0
-            |баллов и выше
-      .child
-        .text
-          p
-            span data-num="67"
-              | 0
-            | Минимальный балл ЕГЭ за 3 года
-  .background-reviews
-    .small-up-1.medium-up-2.large-up-3.centrator
-      h2.headline.text-center.color-white#results
-        | Отзывы
-      =render "posts"
 
+h2.headline.text-center#results
+  | Результаты
+.row.small-up-1.medium-up-2.large-up-4#counter data-equalizer="" data-equalize-on="medium"
+  .medium-3.columns
+    .result
+      .callout data-equalizer-watch=""
+        p
+          |Более 
+          span data-num="300"
+            | 0
+          |  учеников поступили в лучшие ВУЗы России
+  .medium-3.columns
+    .result
+      .callout data-equalizer-watch=""
+        p
+          span data-num="3"
+            |0
+          |  Ученика сдали ЕГЭ на 
+          span data-num="100"
+            | 0 
+          | баллов
+  .medium-3.columns
+    .result
+      .callout data-equalizer-watch=""
+        p
+          | Каждый 
+          span data-num="2"
+            | 0
+          |-й сдает ЕГЭ на 
+          span data-num="80"
+            | 0 
+          | баллов и выше
+  .medium-3.columns.end
+    .result
+      .callout data-equalizer-watch=""
+        p
+          span data-num="67"
+            | 0
+          |  Минимальный балл ЕГЭ за 3 года
+.background-reviews
+  .reviews
+    h2.headline.text-center#results
+      | Отзывы
+    =render "posts"
