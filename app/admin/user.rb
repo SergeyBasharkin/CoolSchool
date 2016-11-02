@@ -33,10 +33,7 @@ ActiveAdmin.register User do
   form do |f|
     f.inputs "Admin Details" do
       f.input :full_name
-      f.input :email
-      f.input :password
-      f.input :password_confirmation
-      f.input :role
+      f.input :role,  :collection => ["student","teacher"]
       f.inputs "Attachment", :multipart => true do
         f.input :vk_avatar, height: "100px"
       end
