@@ -5,7 +5,14 @@ ActiveAdmin.setup do |config|
   # for each of the active admin pages.
   #
   config.site_title = "Ege"
+  config.root_to = 'notes#index'
+  config.site_title_link  = "/"
+  config.comments = false
+  config.comments_menu = false
 
+  config.namespace :admin do |admin|
+    admin.comments = false
+  end
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
