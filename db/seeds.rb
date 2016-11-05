@@ -17,6 +17,6 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
 # 5.times{ |i|
 # 	Post.create!(commenter: "#{i}commenter",body: "вы ываоывшыав ыва ываалд ьы ваывзхйцу зйх ок улц х ць ц цулкды ывахвыаххыавлцу"*i) 
 # }
-# ["Математика","Русский язык","Обществознание","Английский язык", "Информатика","Физика","Химия","История","Литература","Биология"].each do |subject|
-# 	Subject.create(name: subject)
-# end
+["Математика","Русский язык","Обществознание","Английский язык", "Информатика","Физика","Химия","История","Литература","Биология"].each do |subject|
+	Subject.create(name: subject)
+end
