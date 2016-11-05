@@ -9,7 +9,7 @@
 /	.arrow-right.medium-1.small-1.columns.end
 /		i.fi-arrow-right
 .row
-  .small-8.columns.small-centered
+  .small-12.columns.small-centered
     .orbit aria-label=("Favorite Space Pictures") data-orbit="" role="region"
       button.orbit-previous
         span.show-for-sr> Previous Slide
@@ -19,8 +19,8 @@
         | ▶︎
       ul.orbit-container
         -@teachers.each do |teacher|
-          li.is-active.orbit-slide
-            =image_tag teacher.vk_avatar
+          li.orbit-slide.teachers
+              =image_tag teacher.vk_avatar
       nav.orbit-bullets
         -@teachers.size.times do |i|
           button.is-active data-slide="#{i}"

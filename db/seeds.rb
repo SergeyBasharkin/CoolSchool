@@ -4,8 +4,8 @@
 # Examples:
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-# AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+# Mayor.create(name: 'Emanuel', city: cities.first)
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 # User.create!(email: '1@mail.ru',full_name:"teacher1", password: '123456', role: "teacher",vk_avatar: "https://pp.vk.me/c631427/v631427894/4e12a/HpUnQ7hmlRg.jpg")
 # User.create!(email: '2@mail.ru',full_name:"teacher2", password: '123456', role: "teacher",vk_avatar: "https://pp.vk.me/c604826/v604826894/4f20/oWQjThqFu3o.jpg")
 # User.create!(email: '3@mail.ru',full_name:"teacher3", password: '123456', role: "teacher",vk_avatar: "https://pp.vk.me/c604826/v604826894/4f05/3fn4HuB79b8.jpg")
@@ -17,6 +17,6 @@
 # 5.times{ |i|
 # 	Post.create!(commenter: "#{i}commenter",body: "вы ываоывшыав ыва ываалд ьы ваывзхйцу зйх ок улц х ць ц цулкды ывахвыаххыавлцу"*i) 
 # }
-["Математика","Русский язык","Обществознание","Английский язык", "Информатика","Физика","Химия","История","Литература","Биология"].each do |subject|
-	Subject.create(name: subject)
-end
+# ["Математика","Русский язык","Обществознание","Английский язык", "Информатика","Физика","Химия","История","Литература","Биология"].each do |subject|
+# 	Subject.create(name: subject)
+# end

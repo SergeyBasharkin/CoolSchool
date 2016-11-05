@@ -1,6 +1,24 @@
-.row.small-up-1.medium-up-2.large-up-3
-  - @posts.each do |post|
-    .columns
-      .post.panel.medium-text-size
-        h3.text-center = post.commenter
-        p = post.body
+.row
+  .small-12.columns.small-centered
+    .orbit aria-label=("Reviews") data-orbit="" role="region"
+      button.orbit-previous
+        span.show-for-sr> Previous Slide
+        | ◀︎
+      button.orbit-next
+        span.show-for-sr> Next Slide
+        | ▶︎
+      ul.orbit-container
+        -@posts.each do |post|
+          li.orbit-slide
+	        .article-card style="height:auto;"
+	          .card-content
+	            =image_tag post.vk_image
+	            p.post-author
+	              | От 
+	              a href="#{post.vk}" = post.commenter
+	            h4 = post.body
+      nav.orbit-bullets
+        -@posts.size.times do |i|
+          button.is-active data-slide="#{i}"
+            span.show-for-sr First slide details.
+            span.show-for-sr Current Slide
