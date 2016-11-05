@@ -4,6 +4,9 @@
 .row
   .medium-6.columns    
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .sign-in-errors
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
       .field
         = f.label  "Email"
         = f.email_field :email, autofocus: true
@@ -17,6 +20,9 @@
           = f.label "Запомнить"
     
       .actions
-        = f.submit "Войти", class:"button"
+        .buttons-group
+          = f.submit "Войти", class:"button"
+          = render "devise/shared/links"
+
   
-      = render "devise/shared/links"
+      

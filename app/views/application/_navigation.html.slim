@@ -18,26 +18,49 @@ header
         | Первое занятие бесплатно! 
     .row.input-notes
       =render "notes/form"
-    ul.topnav.header-subnav id="myTopnav"
-      li
-        a href="#school"  О школе
-      li
-        a href="#lessons"  Предметы
-      li
-        a href="#teachers"  Преподаватели
-      li
-        a href="#results"  Результаты
-      li
-        a href="#responses"  Отзывы
-      li
-        a href="#feedback"  Контакты
-      li
-        -if user_signed_in?
-          =link_to "Личный кабинет", "/lessons/index", :method => :get
-          =link_to "Выйти", destroy_user_session_path, :method => :delete
-        -else
-          =link_to "Личный кабинет", new_user_session_path, :method => :get
-      li.icon
-        a href="javascript:void(0)" onclick="toggleFunc()" &#9776;
-      
+    -if controller_name != "welcome"
+      ul.topnav.header-subnav id="myTopnav"
+        li
+          a href="/welcome/index#school"  О школе
+        li
+          a href="/welcome/index#lessons"  Предметы
+        li
+          a href="/welcome/index#teachers"  Преподаватели
+        li
+          a href="/welcome/index#results"  Результаты
+        li
+          a href="/welcome/index#responses"  Отзывы
+        li
+          a href="/welcome/index#feedback"  Контакты
+        li
+          -if user_signed_in?
+            =link_to "Личный кабинет", "/lessons/index", :method => :get
+            =link_to "Выйти", destroy_user_session_path, :method => :delete
+          -else
+            =link_to "Личный кабинет", new_user_session_path, :method => :get
+        li.icon
+          a href="javascript:void(0)" onclick="toggleFunc()" &#9776;
+    -else  
+      ul.topnav.header-subnav id="myTopnav"
+        li
+          a href="#school"  О школе
+        li
+          a href="#lessons"  Предметы
+        li
+          a href="#teachers"  Преподаватели
+        li
+          a href="#results"  Результаты
+        li
+          a href="#responses"  Отзывы
+        li
+          a href="#feedback"  Контакты
+        li
+          -if user_signed_in?
+            =link_to "Личный кабинет", "/lessons/index", :method => :get
+            =link_to "Выйти", destroy_user_session_path, :method => :delete
+          -else
+            =link_to "Личный кабинет", new_user_session_path, :method => :get
+        li.icon
+          a href="javascript:void(0)" onclick="toggleFunc()" &#9776;
+        
 
