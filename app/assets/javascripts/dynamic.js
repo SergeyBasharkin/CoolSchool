@@ -8,7 +8,7 @@ $(document).ready(function(){
             var cPos=$("#counter").offset().top;
             var topWindow=$(window).scrollTop();
             var time = 2;
-            if(cPos< topWindow+300 && flag) {
+            if(cPos< topWindow+500 && flag) {
                 $('span').each(function () {
                     var
                         i = 1,
