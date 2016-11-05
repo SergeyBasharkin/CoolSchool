@@ -3,7 +3,7 @@ ActiveAdmin.register Post do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :commenter, :body
+permit_params :commenter, :body, :vk, :vk_image
 #
 # or
 #
