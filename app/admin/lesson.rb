@@ -24,7 +24,7 @@ ActiveAdmin.register Lesson do
   end
 
   form do |f|
-    f.inputs "Admin Details" do
+    f.inputs "Lessons Details" do
       f.input :date
       f.input :subject
       f.input :teacher, :collection => User.where(role: "teacher")

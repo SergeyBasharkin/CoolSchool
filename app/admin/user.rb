@@ -42,7 +42,7 @@ end
   end
 
   form do |f|
-    f.inputs "Admin Details" do
+    f.inputs "User Details" do
       f.input :full_name
       f.input :role,  :collection => ["student","teacher"]
       f.input :email
