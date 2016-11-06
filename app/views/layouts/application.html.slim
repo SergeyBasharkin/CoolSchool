@@ -4,11 +4,12 @@ html lang="ru"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     meta name="yandex-verification" content="de499a81a23a5870"
+    meta name="yandex-verification" content="cb6e914133acf0dd"
     title == content_for?(:title) ? yield(:title) : "Школа ЕГЭ и ОГЭ"
     = favicon_link_tag "facon.jpg"
     = stylesheet_link_tag "application"
     = javascript_include_tag "application", "data-turbolinks-track" => true
-    = csrf_meta_tag
+    = csrf_meta_tags
     = stylesheet_link_tag "application"
     = stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css"
 

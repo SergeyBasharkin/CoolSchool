@@ -9,7 +9,7 @@
       | Введите правильный номер телефона
   .large-4.medium-4.columns.field
     .input-group
-      = f.text_field :vk, class: "input-group-field crystal-input", placeholder: "Ссылка ВКонтакте", title: "Ссылка ВК"
+      = f.text_field :vk, class: "input-group-field crystal-input", placeholder: "Ссылка ВКонтакте", pattern: "vk_only" , title: "Ссылка ВК"
       .input-group-button
         = f.submit class: "button", value: "Записаться" 
       br

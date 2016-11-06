@@ -1,13 +1,19 @@
 header
-  .header
-    .large-1.medium-3.small-3.columns
+  .header.clearfix
+    .large-1.medium-3.small-3.columns.float-left
       =image_tag "mudryiy-filin1_2.png", size: "150x150"
-    .large-2.medium-6.small-8.columns.filin-logo
+    .large-2.medium-5.small-9.columns.filin-logo.float-left
       h1.header-text-logo
         |Центр эффективной подготовки к ЕГЭ и ОГЭ
         br 
       h2.header-text-logo.hard-html
         |Школа будущего студента
+    .large-4.medium-4.small-11.columns.float-right
+      p.text-center
+        i.fi-telephone
+        | +7 (906) 111-07-57
+        br
+        | +7 (843) 203-35-44    
     .row    
     h1.headline.text-center
       b
@@ -19,19 +25,19 @@ header
     .row.input-notes
       =render "notes/form"
     -if controller_name != "welcome"
-      ul.topnav.header-subnav id="myTopnav"
+      ul.topnav.header-subnav 
         li
-          a href="/welcome/index#school"  О школе
+          a href="/welcome/index#school" data-turbolinks="false"  О школе
         li
-          a href="/welcome/index#lessons"  Предметы
+          a href="/welcome/index#lessons" data-turbolinks="false"  Предметы
         li
-          a href="/welcome/index#teachers"  Преподаватели
+          a href="/welcome/index#teachers" data-turbolinks="false"  Преподаватели
         li
-          a href="/welcome/index#results"  Результаты
+          a href="/welcome/index#results" data-turbolinks="false"  Результаты
         li
-          a href="/welcome/index#responses"  Отзывы
+          a href="/welcome/index#responses" data-turbolinks="false"  Отзывы
         li
-          a href="/welcome/index#feedback"  Контакты
+          a href="/welcome/index#feedback" data-turbolinks="false"  Контакты
         li
           -if user_signed_in?
             =link_to "Личный кабинет", "/lessons/index", :method => :get
@@ -43,17 +49,17 @@ header
     -else  
       ul.topnav.header-subnav id="myTopnav"
         li
-          a href="#school"  О школе
+          a href="#school" data-turbolinks="false" О школе
         li
-          a href="#lessons"  Предметы
+          a href="#lessons" data-turbolinks="false"  Предметы
         li
-          a href="#teachers"  Преподаватели
+          a href="#teachers" data-turbolinks="false"  Преподаватели
         li
-          a href="#results"  Результаты
+          a href="#results" data-turbolinks="false" Результаты
         li
-          a href="#responses"  Отзывы
+          a href="#responses" data-turbolinks="false" Отзывы
         li
-          a href="#feedback"  Контакты
+          a href="#feedback" data-turbolinks="false" Контакты
         li
           -if user_signed_in?
             =link_to "Личный кабинет", "/lessons/index", :method => :get

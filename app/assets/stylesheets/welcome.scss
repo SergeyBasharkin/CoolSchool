@@ -31,10 +31,8 @@
   letter-spacing: 2px;
   text-transform: uppercase; 
 }
-.info p {
-  color: #717171;
-  font-size: 16px;
-  padding-top: 10px; 
+.info {
+  text-shadow: #333333 1px 0px, #333333 1px 1px, #333333 0px 1px, #333333 -1px 1px, #333333 -1px 0px, #333333 -1px -1px, #333333 0px -1px, #333333 1px -1px;
 }
 .info a {
   border-radius: 2px;

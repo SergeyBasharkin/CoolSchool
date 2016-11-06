@@ -1,29 +1,36 @@
 .centrator  
-  h2.headline.text-center#school
-    | О Школе 
-  hr
-  p.medium-text-size
-    | Мы занимаемся подготовкой к ЕГЭ и ОГЭ с 2013 года.
-    | Преподаватели - выпускники ведущих ВУЗов России, призеры всеросийских олимпиад
-    |, имеющие большой опыт в подготовке к ЕГЭ и ОГЭ, молодые и амбициозные стобальники!
-    |  Занятия проводятся в малых (от 2-4 человек) и средних (от 4-8) по численности группах
-    | Тебе понравится готовиться к экзаменам в нашей дружной команде!
-    | На занятиях тебя ждет уютная атмосфера, увлекательное погружение в мир знаний и чай со сладостями!
-  h4.large.text-center
-    | По окончании курсов выдаются сертификаты
+  h2.text-center.section-title
+    | О ШКОЛЕ
+  .row
+    .small-12.medium-12.large-6.column data-equalizer-watch="" 
+      p.large-text.text-left
+        | Мы занимаемся подготовкой к ЕГЭ и ОГЭ с 2013 года.
+        br/
+        | Преподаватели - выпускники ведущих ВУЗов России, призеры всероссийских олимпиад, имеющие большой опыт в подготовке к ЕГЭ и ОГЭ, молодые и амбициозные стобалльники!
+        br/
+        | Занятия проводятся в малых (от 2-4 человек) и средних (от 4-8) по численности группах.
+        br/
+        | Тебе понравится готовиться к экзаменам в нашей дружной команде!
+        br/
+        | На занятиях тебя ждет уютная атмосфера, увлекательное погружение в мир знаний и чай со сладостями!
+        
+      h5.text-center.large-text1
+        b По окончании курсов выдаются сертификаты!
+    .small-6.medium-6.large-6.column.hide-for-medium-only.hide-for-small-only data-equalizer-watch="" 
+      img.school-img src="https://pp.vk.me/c638128/v638128894/9ed7/YyRf0VXFb7o.jpg" /
 .lessons
   .row
     .small-12.column
-      h2.headline.text-center#lessons
+      h2.headline.text-center.section-title-white#lessons
         | Предметы
     .large-up-5.medium-up-5.small-up-2.column.large-centered.small-centered.medium-centered
       =render "subjects"
 .centrator
-  h2.headline.text-center#teachers
-    | Наши преподаватели
+  h2.headline.text-center.teach-section-title#teachers
+    | Преподаватели
   = render 'teachers'
 
-h2.headline.text-center#results
+h2.headline.text-center.section-title#results
   | Результаты
 .row.small-up-1.medium-up-2.large-up-4#counter data-equalizer="" data-equalize-on="medium"
   .medium-3.columns
@@ -38,8 +45,8 @@ h2.headline.text-center#results
     .result
       .callout data-equalizer-watch=""
         p
-          span data-num="3"
-            |0
+          b
+            | 3
           |  Ученика сдали ЕГЭ на 
           span data-num="100"
             | 0 
@@ -49,8 +56,8 @@ h2.headline.text-center#results
       .callout data-equalizer-watch=""
         p
           | Каждый 
-          span data-num="2"
-            | 0
+          b
+            | 2
           |-й сдает ЕГЭ на 
           span data-num="80"
             | 0 
@@ -61,9 +68,16 @@ h2.headline.text-center#results
         p
           span data-num="67"
             | 0
-          |  Минимальный балл ЕГЭ за 3 года
+          |  Минимальный балл ЕГЭ за 
+          b
+            |3  
+          | года
 .background-reviews
-  .reviews
-    h2.headline.text-center#results
+  .reviews#responses
+    h2.headline.text-center.section-title#results
       | Отзывы
     =render "posts"
+.row
+  .small-10.columns.small-centered.foot
+    a.expanded.button.blue href="#" data-turbolinks="false"
+      h4 Запишись на первое занятие бесплатно!

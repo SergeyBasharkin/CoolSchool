@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
   before_action :set_note, only: [:show, :edit, :update, :destroy]
-
+  skip_before_filter :verify_authenticity_token, :only => :create
   # GET /notes
   # GET /notes.json
   def index
